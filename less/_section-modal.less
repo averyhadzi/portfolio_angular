@@ -1,0 +1,134 @@
+/* Portfolio Modals */
+
+.portfolio-modal {
+	.container { width: 100%; padding: 5%; }
+	.modal-content {
+	    border-radius: 0;
+	    background: @halftone;
+	    background-clip: border-box;
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	    border: none;
+	    min-height: 100%;
+
+		h2 {
+	    	margin: 0;
+	    	font-size: 3em;
+		}
+		img {
+			margin-bottom: 30px;
+		}
+		.item-details {
+			margin: 30px 0;
+		}
+		.case-study { 
+			padding: 2%;
+			min-height: 100%;
+			text-align: center;
+			
+		}
+	}
+    .close-modal {
+        position: absolute;
+        width:75px;
+        height:75px;
+        background-color:transparent;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        z-index: 99999;
+        &:hover {
+            opacity: 0.3;
+        }
+        .lr {
+            height:75px;
+            width:1px;
+            margin-left:35px;
+            background-color:@brand-orange;
+            transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            /* IE 9 */
+            -webkit-transform: rotate(45deg);
+            /* Safari and Chrome */
+            z-index:1051;
+            .rl {
+                height:75px;
+                width:1px;
+                background-color:@brand-orange;
+                transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                /* IE 9 */
+                -webkit-transform: rotate(90deg);
+                /* Safari and Chrome */
+                z-index:1052;
+            }            
+        }        
+    }
+}
+
+
+/* Carousel */
+
+.carousel .item {
+	.carousel-caption { 
+		font-family: @font-family-1;
+		position: relative; 
+		padding: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin-bottom: 2em;
+		p {
+			color: #999;
+			text-shadow: none;
+			text-transform: uppercase;
+		}
+	}
+	img { margin: 0 auto; }
+}
+.carousel-indicators {
+	bottom: -2em;
+	height: 20px;
+	li {
+		color: @gray-lighter;
+		border-color: fade(@gray, 25%);
+		&.active { background-color: @brand-orange; }
+	}
+}
+
+.carousel-control {
+	top: -15px;
+	left: 0;
+	right: 0;
+	font-family: "FontAwesome";
+	font-size: 3em;
+	color: @gray;
+	text-shadow: none;
+	opacity: 0.2;
+	.transition;
+	&.left, &.right { background: none; }
+	&:hover { opacity: 1; color: @brand-orange; }
+}
+
+.carousel-inner {
+	width: 75%;
+	margin: 0 auto; 
+}
+
+
+.gallery-wrap {
+	padding-top: 3%;
+}
+
+/* Gallery */
+
+.gallery .item {
+	margin: .5em;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	background-color: #fff;
+	border: 10px solid #eee;
+	.drop-shadow();
+}
+
