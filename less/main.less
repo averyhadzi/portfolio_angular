@@ -1,6 +1,7 @@
 @import "_variables.less";
 @import "_mixins.less";
 @import "_animations.less";
+@import "_page-transitions.less";
 @import "_section-portfolio.less";
 @import "_section-modal.less";
 @import "_section-about.less";
@@ -12,6 +13,11 @@
 
 body {
 	overflow-x: hidden;
+}
+
+.wrapper, .page {
+	min-height: 100%;
+	position: relative;
 }
 
 sup { top: -1em; font-size: .5em; }
